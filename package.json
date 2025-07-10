@@ -21,3 +21,7 @@
         "esbuild": "^0.24.2"
     }
 }
+
+"scripts": {
+  "build": "npx esbuild js/*.js --bundle --minify --outdir=public"
+}
