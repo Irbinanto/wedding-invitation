@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "npx esbuild js/*.js --bundle --outdir=dist --servedir=.",
-   "build": "npx esbuild js/*.js --bundle --minify --outdir=public && cp index.html public/index.html && cp dashboard.html public/dashboard.html"
+  "build": "npx esbuild js/*.js --bundle --minify --outdir=public && cp index.html public/index.html && cp -r css public/ && cp -r assets public/"
 
   },
   "dependencies": {
